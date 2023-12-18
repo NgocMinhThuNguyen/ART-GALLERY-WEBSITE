@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/style.css">
   
   <title>Frontend Mentor | Art gallery website</title>
 </head>
@@ -20,19 +22,22 @@
         <img src="./assets/mobile/image-hero@2x.jpg" alt="A young couple is looking at image of an old man">
       </picture>
       
-      <div class="intro-content">
+      <div class="intro-content flex">
         <h1>Modern Art Gallery</h1>
         <div class="intro-sub-content">
           <p class="text">The arts in the collection of the Modern Art Gallery all started from a spark of inspiration. Will these pieces inspire you? Visit us and find out.</p>
-          <a href="location.html" class="cta-btn">
-            <svg aria-hidden="true" focusable="false" width="10" height="24" xmlns="http://www.w3.org/2000/svg"><path class="arrow" stroke="#FFF" fill="none" d="m1 0 8 12-8 12"/></svg>
-            Our location></a>
+          <div class="navigate-page flex">
+            <a href="location.html" class="cta-btn flex">Our location</a>
+            <a href="location.html" class="arrow flex">
+              <svg aria-hidden="true" focusable="false" width="10" height="24" xmlns="http://www.w3.org/2000/svg"><path stroke="#FFF" fill="none" d="m1 0 8 12-8 12"/></svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="gallery">
-      <div class="item1">
+    <section class="gallery grid">
+      <div class="item1 flex">
         <div class="item1-content">
           <h2>Your day at the gallery</h2>
           <p class="text">Wander through our distinct collections and find new insights about our artists. Dive into the details of their creative process.</p>
@@ -62,16 +67,16 @@
       </div>
 
       <div class="item4">
-        <h2> Come &amp; be inspired</h2>
+        <h2>Come &amp; be inspired</h2>
         <p class="text">We’re excited to welcome you to our gallery and see how our collections influence you.</p>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="grid">
     <a href="index.html" class="logo"><img src="./assets/logo-light.svg" alt=" Modern Art Gallery"></a>
     <p class="text">The Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
-    <ul>
+    <ul class="flex">
       <li>
         <a href="#">
           <svg aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path class="icon" d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0Z" fill="#FFF"/></svg>
