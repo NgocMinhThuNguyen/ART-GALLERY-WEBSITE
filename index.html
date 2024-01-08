@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;800;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/index.css">
   
   <title>Frontend Mentor | Art gallery website</title>
 </head>
@@ -26,28 +27,28 @@
         <h1>Modern Art Gallery</h1>
         <div class="intro-sub-content">
           <p class="text">The arts in the collection of the Modern Art Gallery all started from a spark of inspiration. Will these pieces inspire you? Visit us and find out.</p>
-          <div class="navigate-page flex">
-            <a href="location.html" class="cta-btn flex">Our location</a>
-            <a href="location.html" class="arrow flex">
-              <svg aria-hidden="true" focusable="false" width="10" height="24" xmlns="http://www.w3.org/2000/svg"><path stroke="#FFF" fill="none" d="m1 0 8 12-8 12"/></svg>
-            </a>
-          </div>
+        </div>
+        <div class="navigate-page flex">
+          <a href="location.html" class="cta-btn flex">Our location</a>
+          <a href="location.html" class="arrow flex">
+            <svg aria-hidden="true" focusable="false" width="10" height="24" xmlns="http://www.w3.org/2000/svg"><path stroke="#FFF" fill="none" d="m1 0 8 12-8 12"/></svg>
+          </a>
         </div>
       </div>
     </section>
 
     <section class="gallery grid">
       <div class="item1 flex">
-        <div class="item1-content">
-          <h2>Your day at the gallery</h2>
-          <p class="text">Wander through our distinct collections and find new insights about our artists. Dive into the details of their creative process.</p>
-        </div>
-
         <picture>
           <source srcset="./assets/desktop/image-grid-1@2x.jpg" media="(min-width: 90rem)">
           <source srcset="./assets/tablet/image-grid-1@2x.jpg" media="(min-width: 48rem)">
           <img src="./assets/mobile/image-grid-1@2x.jpg" alt="">
         </picture>
+
+        <div class="item1-content">
+          <h2>Your day at the gallery</h2>
+          <p class="text">Wander through our distinct collections and find new insights about our artists. Dive into the details of their creative process.</p>
+        </div>
       </div>
 
       <div class="item2">
